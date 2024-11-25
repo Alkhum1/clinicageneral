@@ -23,7 +23,6 @@
                 <ul>
                     <li><a href="index.html">Dashboard</a></li>
                     <li><a href="paciente.html">Paciente</a></li>
-                    <li><a href="secretario.html">Citas</a></li>
                     <li><a href="secretario.html" class="active">Formulario</a></li>
                     <li><a href="#">Médicos</a></li>
                     <li><a href="#">Configuración</a></li>
