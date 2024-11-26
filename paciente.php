@@ -2,16 +2,18 @@
 include 'gestionCitas.php';
 $citas = listarCitas();
 ?>
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <!-- Tus headers existentes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Citas</title>
+    <title>Panel de Usuario</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <div class="dashboard">
         <!-- Sidebar -->

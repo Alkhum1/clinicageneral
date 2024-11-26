@@ -59,6 +59,7 @@ function eliminarCita($idCita) {
     return mysqli_stmt_execute($stmt);
 }
 
+
 // Manejar solicitudes
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $accion = $_POST['accion'] ?? '';

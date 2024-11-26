@@ -22,7 +22,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="paciente.html">Paciente</a></li>
+                    <li><a href="paciente.php">Paciente</a></li>
                     <li><a href="secretario.html" class="active">Formulario</a></li>
                     <li><a href="#">Médicos</a></li>
                     <li><a href="#">Configuración</a></li>
@@ -91,13 +91,13 @@ if (isset($_POST['Enviar2'])) {
     $correo = $_POST['CorreoD'];
     $especialidad = $_POST['Especialidad'];
 
-    $insertaDatos = "INSERT INTO doctor (nombre, apellido, telefono, correo, especialidad) 
-                     VALUES ('$nombre', '$apellido', '$telefono', '$correo', '$especialidad')";
+    $insertaDatos = "INSERT INTO doctor (Nombre, Apellidos, IDEspecialidad, Correo, Telefono) 
+                     VALUES ('$nombre', '$apellidos', '$especialidad', '$correo', '$telefono')";
     
     if ($enlace && mysqli_query($enlace, $insertaDatos)) {
-        echo "Datos del doctor insertados correctamente.";
+        echo "<script>alert('Datos del doctor insertados correctamente.');</script>";
     } else {
-        echo "Error al insertar datos del doctor: " . mysqli_error($enlace);
+        echo "<script>alert('Error al insertar datos del doctor: " . mysqli_error($enlace) . "');</script>";
     }
 }
 
@@ -106,16 +106,14 @@ if (isset($_POST['Enviar'])) {
     $apellidos = $_POST['Apellidos'];
     $telefono = $_POST['Telefono'];
     $correo = $_POST['Correo'];
-    // No se incluye 'direccion' porque no existe en la tabla
 
-    // Asegúrate de que la consulta tenga la cantidad correcta de columnas y valores
     $insertaDatos = "INSERT INTO paciente (Nombre, Apellidos, Telefono, Correo) 
                      VALUES ('$nombre', '$apellidos', '$telefono', '$correo')";
     
     if ($enlace && mysqli_query($enlace, $insertaDatos)) {
-        echo "Datos del paciente insertados correctamente.";
+        echo "<script>alert('Datos del Paciente insertados correctamente.');</script>";
     } else {
-        echo "Error al insertar datos del paciente: " . mysqli_error($enlace);
+        echo "<script>alert('Error al insertar datos del Paciente: " . mysqli_error($enlace) . "');</script>";
     }
 }
 ?>

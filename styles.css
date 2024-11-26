@@ -199,3 +199,56 @@ table td .status {
 .action-btn.danger:hover {
     background-color: #c0392b;
 }
+
+/* Estilo para el panel de formulario */
+#modalCita {
+    display: none; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+}
+
+/* Estilo para las etiquetas */
+#modalCita label {
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+}
+
+/* Estilo para los inputs y selects */
+#modalCita input[type="date"],
+#modalCita input[type="time"],
+#modalCita select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+/* Estilo para los botones */
+#modalCita button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-right: 10px; 
+}
+
+#modalCita button:hover {
+    background-color: #45a049; 
+}
+
+/* Estilo para el botón de cancelar */
+#modalCita button[type="button"] {
+    background-color: #f44336; 
+}
+
+#modalCita button[type="button"]:hover {
+    background-color: #e53935; 
+}
